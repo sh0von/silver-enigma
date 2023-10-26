@@ -50,7 +50,7 @@
                                 <li>Edit and update website content.</li>
                                 <li>View website analytics and reports.</li>
                                 <li>Customize the website\'s appearance and settings.</li>
-                                <li>csec{c00k13s_4r3_d3l1c10us}.</li>
+                                <li>CSEC{c00k13s_4r3_d3l1c10us}.</li>
                             </ul>';
                     }
                 } else {
