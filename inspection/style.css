@@ -1,12 +1,54 @@
-/* Example CSS for styling the header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-}
+        /* Custom CSS for the terminal-style theme */
+        body {
+            background-color: #000;
+            color: #0F0;
+        }
+        .navbar {
+            background-color: #000;
+        }
+        .navbar a {
+            color: #0F0;
+        }
+        .card {
+            background-color: #000;
+            color: #0F0;
+            border: 1px solid #0F0;
+        }
+        .card-title {
+            color: #0F0;
+        }
+        .btn-primary {
+            background-color: #00F;
+            border: 1px solid #00F;
+        }
+        .btn-primary:hover {
+            background-color: #0AF;
+        }
+        .list-group-item {
+            background-color: #000;
+            color: #0F0;
+        }
+        .animated-text {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        /* 2nd part of the flag :  !s_th3_f!rst */
 
-h1 {
-    font-size: 2em;
-}
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
 
-/* Add more styles as needed */
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #0F0;
+            }
+        }
