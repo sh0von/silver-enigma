@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Admin Page</title>
-    <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -41,7 +40,7 @@
         <div class="admin-container mt-4">
             <div class="demo-content"><p>Nothing Until youre admin</p>
                 <?php
-                // Check the value of the "admin" cookie and display content accordingly
+               
                 if (isset($_COOKIE['admin'])) {
                     if ($_COOKIE['admin'] == 1) {
                         echo '<p>This is your admin page where you can manage various aspects of your website.</p>
@@ -55,7 +54,7 @@
                             </ul>';
                     }
                 } else {
-                    // Display blank content if the "admin" cookie is not set
+                   
                     echo '';
                 }
                 ?>
@@ -64,13 +63,12 @@
     </div>
 
     <?php
-    // Set a cookie named "admin" with the value "0" using PHP if it's not already set
+   
     if (!isset($_COOKIE['admin'])) {
         setcookie("admin", "0", time() + 3600, "/");
     }
     ?>
 
-    <!-- Include Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

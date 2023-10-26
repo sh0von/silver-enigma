@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $encryptedPassword = str_rot13("FhcreQhc3eCnff");
 
     if ($username === $validUsername && $password === $encryptedPassword) {
-        // Redirect to success.php
+       
         header("Location: success.php");
         exit();
     } else {
@@ -28,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// Check if the 'src' parameter is set in the URL
+
 if (isset($_GET['src'])) {
-    // Display the source code
+   
     highlight_file(__FILE__);
     exit;
 }

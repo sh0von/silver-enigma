@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Random Quote Generator</title>
-    <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -41,7 +40,7 @@
         <div class="quote-container mt-4">
             <p class="quote-text">
                 <?php
-                // Array of random quotes
+               
                 $quotes = array(
                     "The only way to do great work is to love what you do. - Steve Jobs",
                     "Life is what happens when you're busy making other plans. - John Lennon",
@@ -54,17 +53,15 @@
                     "It does not matter how slowly you go as long as you do not stop. - Confucius"
                 );
 
-                // Get a random quote
+               
                 $randomQuote = $quotes[array_rand($quotes)];
 
-                // Display the random quote using Bootstrap styles
+               
                 echo $randomQuote;
                 ?>
             </p>
         </div>
     </div>
-
-    <!-- Include Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
