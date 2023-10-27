@@ -1,0 +1,3 @@
+CSEC{aud1t1ng1s1mp0rt4nt}
+All are in Capital.
+Inpect the audio with audio to morse decoder using https://databorder.com/transfer/morse-sound-receiver/ you will get the flag
