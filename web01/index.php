@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head><meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login Page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-    </style>
-</head>
-<body>
 <?php
+session_start(); // Start the session
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
@@ -20,7 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $encryptedPassword = str_rot13("FhcreQhc3eCnff");
 
     if ($username === $validUsername && $password === $encryptedPassword) {
-       
+        // Successful login, set the 'admin' session variable to true
+        $_SESSION['admin'] = true;
+
         header("Location: success.php");
         exit();
     } else {
@@ -28,15 +19,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-
 if (isset($_GET['src'])) {
-   
     highlight_file(__FILE__);
-    exit;
+    exit();
 }
 ?>
 
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
 <div class="container mx-auto mt-5" style="max-width: 400px;">
     <div class="card">
         <div class="card-header">
@@ -59,6 +60,5 @@ if (isset($_GET['src'])) {
         </div>
     </div>
 </div>
-
 </body>
 </html>
