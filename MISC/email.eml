@@ -1,0 +1,27 @@
+MIME-Version: 1.0
+From: "John Doe" <john.doe@example.com>
+To: "Jane Smith" <jane.smith@example.com>
+Date: Tue, 28 Oct 2023 10:00:00 +0000
+Subject: Encrypted Message
+Message-ID: <1234567890@example.com>
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_0012_01D7D7F0.A6C45CB0"
+
+------=_NextPart_000_0012_01D7D7F0.A6C45CB0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Jane,
+
+Please find the attached encrypted message. It's encrypted using ROT13.
+
+Best regards,
+John
+
+------=_NextPart_000_0012_01D7D7F0.A6C45CB0
+Content-Type: application/octet-stream; name="encrypted_message.txt"
+Content-Description: Encrypted Message
+Content-Disposition: attachment; filename="encrypted_message.txt"
+Content-Transfer-Encoding: 7bit
+
+Gur frnepu vf gur fgevat gung vf ryrpgrq jvgu EBG13.
+

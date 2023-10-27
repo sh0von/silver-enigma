@@ -1,3 +1,4 @@
 CSEC{aud1t1ng1s1mp0rt4nt}
 All are in Capital.
 Inpect the audio with audio to morse decoder using https://databorder.com/transfer/morse-sound-receiver/ you will get the flag
+81,85,69,83,84,67,79,78,123,87,51,66,95,51,88,80,76,48,82,51,82,95,49,83,95,52,87,51,83,48,77,51,125
